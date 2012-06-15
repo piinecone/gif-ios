@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CAC7F047158AAEA100A798F5 /* gifFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC7F045158AAEA100A798F5 /* gifFetcher.m */; };
 		CAC7F048158AAEA100A798F5 /* README in Resources */ = {isa = PBXBuildFile; fileRef = CAC7F046158AAEA100A798F5 /* README */; };
+		CAC7F04D158AB3CD00A798F5 /* RecipientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC7F04C158AB3CD00A798F5 /* RecipientViewController.m */; };
+		CAC7F050158AB51A00A798F5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7F04F158AB51A00A798F5 /* AddressBook.framework */; };
+		CAC7F052158AB51F00A798F5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC7F051158AB51F00A798F5 /* AddressBookUI.framework */; };
 		CAF80985158AAC1300FD5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF80984158AAC1300FD5B9F /* UIKit.framework */; };
 		CAF80987158AAC1300FD5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF80986158AAC1300FD5B9F /* Foundation.framework */; };
 		CAF80989158AAC1300FD5B9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF80988158AAC1300FD5B9F /* CoreGraphics.framework */; };
@@ -23,6 +26,10 @@
 		CAC7F044158AAEA100A798F5 /* gifFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gifFetcher.h; sourceTree = SOURCE_ROOT; };
 		CAC7F045158AAEA100A798F5 /* gifFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gifFetcher.m; sourceTree = SOURCE_ROOT; };
 		CAC7F046158AAEA100A798F5 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CAC7F04B158AB3CD00A798F5 /* RecipientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipientViewController.h; sourceTree = "<group>"; };
+		CAC7F04C158AB3CD00A798F5 /* RecipientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipientViewController.m; sourceTree = "<group>"; };
+		CAC7F04F158AB51A00A798F5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CAC7F051158AB51F00A798F5 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		CAF80980158AAC1300FD5B9F /* gif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF80984158AAC1300FD5B9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CAF80986158AAC1300FD5B9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC7F052158AB51F00A798F5 /* AddressBookUI.framework in Frameworks */,
+				CAC7F050158AB51A00A798F5 /* AddressBook.framework in Frameworks */,
 				CAF80985158AAC1300FD5B9F /* UIKit.framework in Frameworks */,
 				CAF80987158AAC1300FD5B9F /* Foundation.framework in Frameworks */,
 				CAF80989158AAC1300FD5B9F /* CoreGraphics.framework in Frameworks */,
@@ -61,9 +70,20 @@
 			name = api;
 			sourceTree = "<group>";
 		};
+		CAC7F04E158AB3D400A798F5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAC7F04B158AB3CD00A798F5 /* RecipientViewController.h */,
+				CAC7F04C158AB3CD00A798F5 /* RecipientViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		CAF80975158AAC1300FD5B9F = {
 			isa = PBXGroup;
 			children = (
+				CAC7F051158AB51F00A798F5 /* AddressBookUI.framework */,
+				CAC7F04F158AB51A00A798F5 /* AddressBook.framework */,
 				CAC7F046158AAEA100A798F5 /* README */,
 				CAF8098A158AAC1300FD5B9F /* gif */,
 				CAF80983158AAC1300FD5B9F /* Frameworks */,
@@ -96,6 +116,7 @@
 				CAF80993158AAC1300FD5B9F /* AppDelegate.h */,
 				CAF80994158AAC1300FD5B9F /* AppDelegate.m */,
 				CAF80996158AAC1300FD5B9F /* MainStoryboard.storyboard */,
+				CAC7F04E158AB3D400A798F5 /* controllers */,
 				CAF80999158AAC1300FD5B9F /* ViewController.h */,
 				CAF8099A158AAC1300FD5B9F /* ViewController.m */,
 				CAF8098B158AAC1300FD5B9F /* Supporting Files */,
@@ -182,6 +203,7 @@
 				CAF80995158AAC1300FD5B9F /* AppDelegate.m in Sources */,
 				CAF8099B158AAC1300FD5B9F /* ViewController.m in Sources */,
 				CAC7F047158AAEA100A798F5 /* gifFetcher.m in Sources */,
+				CAC7F04D158AB3CD00A798F5 /* RecipientViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
